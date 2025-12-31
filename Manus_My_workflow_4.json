@@ -1,0 +1,80 @@
+{
+  "name": "Manus My workflow 4",
+  "nodes": [
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": " https://api.clay.com/v3/tables/t_0t81wcjDX7iDNWq2RHC/run",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "cookie",
+              "value": "claysession=s%3AW_clFOVP7AsW8w-wJbKAvhTsyLoizMoq.sBrtDhqX%2Fdu1fXScuP4%2FVgFKpPVr5ddoI86MYG%2B0%2B9Q"
+            },
+            {
+              "name": " Content-Type",
+              "value": " application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "  {\n    \"fieldIds\": [\"f_0t821i8DVvktDi592RE\"],\n    \"callerName\": \"RunNumRowsModal\",\n    \"runRecords\": {\n      \"viewIdTopRecords\": {\n        \"viewId\": \"gv_0t81wckSRPupfnYrrpA\",\n        \"numRecords\": 100\n      }\n    }\n  }\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        200,
+        20
+      ],
+      "id": "88bfbab1-2837-4e92-9395-42ed649438f1",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 15
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "9c9b8931-233b-4da0-ab6f-c52ab7f998ae",
+      "name": "Schedule Trigger"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "519389c2-25c3-4862-baff-c1ab9253ef48",
+  "meta": {
+    "instanceId": "aa0f1430ecf79b5b895c778601b5fa5fd4b6efb09fe524a26267e88286cce4e3"
+  },
+  "id": "8dZBaxoXJzUExo3W",
+  "tags": []
+}
