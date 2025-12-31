@@ -10,7 +10,7 @@
           "parameters": [
             {
               "name": "Cookie",
-              "value": "claysession=s%3AIHE_GAf7vte1Y1sUGg2K1kDzHhkJjdEw.pQXrTsE09yiZxIoYov10FSkLDRRkwAtf7FadGWxp8rM"
+              "value": "claysession=s%3AIHE_GAf7vte1Y1sUGg2K1kDzHhkJjdEw.pQXrTsE09yiZxIoYov10FSkLDRRkwAtf7FadGWxp8rM; ajs_user_id=4829; ajs_anonymous_id=0052c628-f602-4323-9719-6af20edbf781"
             },
             {
               "name": "Content-Type",
@@ -20,7 +20,7 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "{\n  \"fieldIds\": [\"f_0t821i8DVvktDi592RE\"],\n  \"callerName\": \"RunNumRowsModal\",\n  \"runRecords\": {\n    \"viewIdTopRecords\": {\n      \"viewId\": \"gv_0t81wckSRPupfnYrrpA\",\n      \"numRecords\": 100\n    }\n  }\n}",
+        "jsonBody": "{\n  \"fieldIds\": [\"f_0t821i8DVvktDi592RE\"],\n  \"callerName\": \"RunNumRowsModal\",\n  \"runRecords\": {\n    \"viewIdTopRecords\": {\n      \"viewId\": \"gv_0t81wckSRPupfnYrrpA\",\n      \"numRecords\": 500\n    }\n  }\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -32,7 +32,7 @@
     {
       "parameters": {
         "rule": {
-          "interval": [{"field": "minutes", "minutesInterval": 15}]
+          "interval": [{"field": "minutes", "minutesInterval": 1}]
         }
       },
       "type": "n8n-nodes-base.scheduleTrigger",
