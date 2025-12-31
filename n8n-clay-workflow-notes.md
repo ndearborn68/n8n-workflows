@@ -20,7 +20,7 @@ This workflow runs every 15 minutes and triggers a Clay API table run via PATCH 
 | Field    | Old (Broken)                     | New (Fixed)                                 |
 |----------|----------------------------------|---------------------------------------------|
 | URL      | ` https://api.clay.com...`       | `https://api.clay.com...`                   |
-| Header 1 | `cookie: claysession=...`        | `Authorization: Bearer 5ab764256439eda7e245`|
+| Header 1 | `cookie: claysession=...`        | `Authorization: Bearer f695fe039d0aba0a356f`|
 | Header 2 | ` Content-Type:  application/json` | `Content-Type: application/json`          |
 
 ## API Endpoint
@@ -29,7 +29,7 @@ PATCH https://api.clay.com/v3/tables/t_0t81wcjDX7iDNWq2RHC/run
 ```
 
 ## Headers
-- `Authorization: Bearer 5ab764256439eda7e245`
+- `Authorization: Bearer f695fe039d0aba0a356f`
 - `Content-Type: application/json`
 
 ## Request Body
