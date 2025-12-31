@@ -4,7 +4,7 @@
     {
       "parameters": {
         "method": "PATCH",
-        "url": " https://api.clay.com/v3/tables/t_0t81wcjDX7iDNWq2RHC/run",
+        "url": "https://api.clay.com/v3/tables/t_0t81wcjDX7iDNWq2RHC/run",
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
@@ -13,8 +13,8 @@
               "value": "claysession=s%3AW_clFOVP7AsW8w-wJbKAvhTsyLoizMoq.sBrtDhqX%2Fdu1fXScuP4%2FVgFKpPVr5ddoI86MYG%2B0%2B9Q"
             },
             {
-              "name": " Content-Type",
-              "value": " application/json"
+              "name": "Content-Type",
+              "value": "application/json"
             }
           ]
         },
