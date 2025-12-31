@@ -9,8 +9,8 @@
         "headerParameters": {
           "parameters": [
             {
-              "name": "Authorization",
-              "value": "Bearer f695fe039d0aba0a356f"
+              "name": "Cookie",
+              "value": "claysession=s%3AIHE_GAf7vte1Y1sUGg2K1kDzHhkJjdEw.pQXrTsE09yiZxIoYov10FSkLDRRkwAtf7FadGWxp8rM"
             },
             {
               "name": "Content-Type",
